@@ -16,10 +16,10 @@ var config = {
     theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: 'Kentsel Boşluğu Tasarlamak : Taksim Kentsel Tasarım Yarışması  / Designing the Urban Void : Taksim Urban Design Competition',
+    title: 'Taksim Kentsel Tasarım Yarışması  / Taksim Urban Design Competition',
     subtitle: '',
     byline: 'BAP_Mapping Metabolism of Istanbul_Interactive Mapping / MEF AAP_027',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'BAP_Mapping Metabolism of Istanbul_Interactive Mapping / MEF AAP_027',
     chapters: [
         {
             id: '1',
@@ -59,13 +59,13 @@ var config = {
             image: 'https://i.ibb.co/QjmQ1MTV/1.png',
             description: '',
             location: {
-              center: [28.98510378818441,41.036986544282165],
-                zoom: 15,
+              center: [28.984093729199586,41.03810939880276],
+                zoom: 16,
                 pitch: 40,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback: '',
             onChapterEnter: [
                 // {
@@ -89,13 +89,13 @@ var config = {
             image: 'https://i.ibb.co/q3B3981T/2.png',
             description: '',
             location: {
-              center: [28.98510378818441,41.036986544282165],
-                zoom: 15,
-                pitch: 40,
+              center: [28.98998543858872,41.038789254678505],
+                zoom: 16,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [
                 // {
@@ -151,7 +151,7 @@ var config = {
             location: {
                  center: [28.98510378818441,41.036986544282165],
                 zoom: 17,
-                pitch: 40,
+                pitch: 0,
                 bearing: 0,
                 speed: 1,
                 curve: 2
@@ -163,64 +163,11 @@ var config = {
                 //curve: 0, // change the speed at which it zooms out
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
         },
-        {
-            id: '5',
-            alignment: 'centered',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '',
-            location: {
-                center: [28.98510378818441,41.036986544282165],
-                zoom: 19,
-                pitch: 10,
-                bearing: 0,
-                speed: 1,
-                curve: 2
-                // flyTo additional controls-
-                // These options control the flight curve, making it move
-                // slowly and zoom out almost completely before starting
-                // to pan.
-                //speed: 2, // make the flying slow
-                //curve: 0, // change the speed at which it zooms out
-            },
-            mapAnimation: 'right',
-            rotateAnimation: true,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-         {
-            id: '6',
-            alignment: 'right',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '',
-            location: {
-                center: [28.98510378818441,41.036986544282165],
-                zoom: 19,
-                pitch: 10,
-                bearing: 0,
-                speed: 1,
-                curve: 2
-                // flyTo additional controls-
-                // These options control the flight curve, making it move
-                // slowly and zoom out almost completely before starting
-                // to pan.
-                //speed: 2, // make the flying slow
-                //curve: 0, // change the speed at which it zooms out
-            },
-            mapAnimation: 'right',
-            rotateAnimation: true,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
+       
     ]
 };
